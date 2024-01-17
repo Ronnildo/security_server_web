@@ -5,22 +5,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static %}
     <link rel="stylesheet" href="{% static '/css/login_style/login.css' %}" />
     <title>Login Page</title>
 </head>
 
 <body>
-
     <div class="container">
         <h1 id="titleLogin">Sing In</h1>
+
         <form className="myForm" onSubmit={handleSubmit}>
             <input type="email" name="E-mail" id="inputForm" placeholder="E-mail" />
             <input type="password" name="Password" id="inputForm" placeholder="Password" />
             <a id="reset" href="">Reset password?</a>
-            <!-- <a id="home" href="{% static '/templates/home.html'%}"> -->
-            <input type="submit" value="Sing In" id="singIn" />
-            <!-- </a> -->
+            <a id="home" href="{% url 'home' %}">
+                <input type="submit" value="Sing In" id="singIn" />
+            </a>
         </form>
     </div>
 
