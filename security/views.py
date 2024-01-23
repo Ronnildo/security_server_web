@@ -1,20 +1,30 @@
 from django.shortcuts import render
 from django.http import Http404
+from django.contrib import messages
 
 from .models import User
+from .forms import UserForm
 # Create your views here
 
-
 def login(req):
-    users = User.objects.all()
-    return render(req, 'index.html', {"users": users})
+    return render(req, 'index.html')
 
 def home(req):
-    # try:
-    #     user = User.objects.get(pk=user_id)
-    # except Http404:
-    #     return Http404('Error')
     return render(req, "home.html")
 
 def details(req):
     return render(req, "details.html")
+
+def teste(req):
+    form = UserForm(req.POST or None)
+
+    if str(req.method) == 'POST':
+        if form.is_valid():
+            messages.success('Login efetuado!!')
+            form = UserForm()
+        else:
+            messages.error('E-mail ou senha diferentes!!')
+    context = {
+        'form': form
+    }
+    return render(req, 'teste.html', context)
