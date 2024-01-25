@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    align-self: center;
+    justify-content: self;
+}
+
+.fundo{
+    background-color: #1C1C26;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav{
+    justify-content: space-around;
+}

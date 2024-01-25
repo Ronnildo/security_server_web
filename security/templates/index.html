@@ -1,4 +1,5 @@
 {% load static %}
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,22 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static '/css/login.css' %}" />
     <title>Login Page</title>
+    {% bootstrap_css %}
 </head>
 
 <body>
-    <div class="container">
-        
-        <h1 id="titleLogin">Sing In</h1>
-        <form className="myForm" onSubmit={handleSubmit}>
-            <input type="email" name="E-mail" id="inputForm" placeholder="E-mail" />
-            <input type="password" name="Password" id="inputForm" placeholder="Password" />
-            <a id="reset" href="">Reset password?</a>
-            <a id="home" href="{% url 'home' %}">
-                <input type="submit" value="Sing In" id="singIn" />
-            </a>
-        </form>
+    <div class="fundo">
+        <div class="container-login">
+            <h1 class="title">Sing In</h1>
+            {% bootstrap_messages %}
+            <form action="{% url 'home' %}" method="post" class="form-singin" autocomplete="off">
+                {% csrf_token %}
+                <div>
+                    <label for="">E-mail</label>
+                    <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                {% buttons %}
+                <button type="submit" class="singIn">Sing In</button>
+                {% endbuttons %}
+            </form>
+        </div>
     </div>
-
+    {% bootstrap_javascript jquery='full' %}
 </body>
 
 </html>
