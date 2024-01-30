@@ -6,26 +6,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
     <title>Login Page</title>
     {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static '/css/login.css' %}" />
 </head>
 
 <body>
     <div class="fundo">
         <div class="container-login">
-            <h1 class="title" style="padding-bottom: 30px;">Sing In</h1>
+            <h1 class="title">Sing In</h1>
             {% bootstrap_messages %}
             <form action="{% url 'home' %}" method="post" class="form-singin" autocomplete="off">
                 {% csrf_token %}
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="E-mail" style="color: #FFF;" required>
+                <div>
+                    <input type="email" class="form-control" placeholder="E-mail" required>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" style="color: #FFF;" required>
+                <div>
+                    <input type="password" class="form-control" placeholder="Password" required>
                 </div>
-                <div class="form-group">
-                    <a href="#" class="reset" style="color: #fff; padding-left: 10px;">Reset password?</a>
+                <div>
+                    <a href="#" class="reset">Reset password?</a>
                 </div>
                 {% buttons %}
                     <button type="submit" class="singIn form-singin">Sing In</button>

@@ -10,6 +10,7 @@
     padding: 0;
 }
 
+
 .container-login{
     background-color: #1C1C26;
     border-radius: 30px;
@@ -17,27 +18,35 @@
     height: 60vh;
     box-shadow: 4px 4px 6px 2px rgba(184, 184, 184, 0.15);
     padding: 20px;
+    align-items: center;
 }
 
-/* .form-singin input{
+.title{
+    padding: 10px 0 30px 0;
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.form-singin input{
     font-size: 16px;
     color: #FFF;
     border-radius: 30px;
     height: 48px;
     background-color: #172234;
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
-} */
-
-/* .form-group input[type=text]{
-    color: #FFF;
+    margin-bottom: 20px;
 }
 
 .form-singin input:focus{
     background-color: #172234;
     border-color: #FFF;
-} */
+}
 
-.form-group a{
+.form-singin a{
     color: #fff;
     text-decoration: underline;
     display: flex;
@@ -45,15 +54,20 @@
     position: relative;
 }
 
-.singIn{
-    font-size: 30px;
-    font-weight: 600;
+.form-singin a:hover{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
+.form-singin button{
+    font-size: 24px;
+    font-weight: bold;
     color: #FFF;
     background-color: #F7B608;
-    border-radius: 30px;
-    width: 20vw;
+    border-radius: 16px;
+    width: 10vw;
     height: 50px;
-    display: block;
-    justify-self: end;
     border: none;
 }

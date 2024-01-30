@@ -1,33 +1,13 @@
 {% load static %}
-{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
     <title>Home Page</title>
-    {% bootstrap_css %}
 </head>
 <body>
-    <div class="fundo">
-        <nav class="navbar-nav navbar-expand-lg">
-            <div>
-                <h1>Welcome to Dashboard</h1>
-                <p>Log visualization interface</p>
-            </div>
-            <div>
-                <div class="user-simb">
-                    <h3>RS</h3>
-                </div>
-                <h3>Ronnildo</h3>
-            </div>
-        </nav>
-        <!-- <h1>Home page</h1> -->
-        <div class="container-full">
-            
-        </div>
-    </div>
-    {% bootstrap_javascript jquery='full' %}
+    <h1>Home Page</h1>
 </body>
 </html>
