@@ -10,34 +10,39 @@
     padding: 0;
 }
 
-.title{
-    font-size: 48px;
-    color: #FFFF;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    align-self: center;
+.container-login{
+    background-color: #1C1C26;
+    border-radius: 30px;
+    width: 40vw;
+    height: 60vh;
+    box-shadow: 4px 4px 6px 2px rgba(184, 184, 184, 0.15);
+    padding: 20px;
 }
 
-.form-singin label{
-    font-size: 16px;
-    color: #FFF;
-    padding-left: 10px
-}
-
-.form-singin input{
+/* .form-singin input{
     font-size: 16px;
     color: #FFF;
     border-radius: 30px;
     height: 48px;
     background-color: #172234;
     box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+} */
+
+/* .form-group input[type=text]{
+    color: #FFF;
 }
 
 .form-singin input:focus{
     background-color: #172234;
     border-color: #FFF;
+} */
+
+.form-group a{
+    color: #fff;
+    text-decoration: underline;
+    display: flex;
+    justify-content: end;
+    position: relative;
 }
 
 .singIn{
@@ -48,19 +53,7 @@
     border-radius: 30px;
     width: 20vw;
     height: 50px;
-    margin: 1.5rem 0 0 8rem;
-    border: none;
-}
-
-.container-login{
-    background-color: #1C1C26;
-    border-radius: 30px;
-    width: 40vw;
-    height: 70vh;
     display: block;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 6px 2px rgba(184, 184, 184, 0.15);
-    padding: 20px;
-
+    justify-self: end;
+    border: none;
 }
