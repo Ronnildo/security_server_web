@@ -1,13 +1,92 @@
 {% load static %}
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <title>Home Page</title>
+    {% bootstrap_css %}
 </head>
+
 <body>
-    <h1>Home Page</h1>
+    <div class="fundo">
+        <div class="title">
+            <div>
+                <h2>Welcome to Dashboard</h2>
+                <p>Log visualization interface</p>
+            </div>
+            <div class="user-info">
+                <h2>RS</h2>
+                <h3>Ronnildo</h3>
+            </div>
+        </div>
+        <div class="filter">
+            <input class="search" type="text" placeholder="Search">
+            <div>
+                <input type="date" name="Date" id="date">
+                <button class="update">Update</button>
+                <button class="filtrar">Filters</button>
+            </div>
+        </div>
+        <div class="data-container">
+            <table class="table table-hover">
+                <thead>
+                    <th scope="col">IP ADDRESS</th>
+                    <th scope="col">USER</th>
+                    <th scope="col">PORT</th>
+                    <th scope="col">OCCURRENCES</th>
+                    <th scope="col">SUCESS</th>
+                    <th scope="col">FAILED</th>
+                    <th scope="col">ACTIONS</th>
+                </thead>
+                <tbody>
+                    <tr scope="row">
+                        <th>144.244.23.49</th>
+                        <th>administrador</th>
+                        <th>40562</th>
+                        <th>5</th>
+                        <th>5</th>
+                        <th>2</th>
+                        <th>
+                            <label class="switch">
+                                <input type="checkbox" name="action" id="toggle">
+                                <span class="slider"></span>
+                            </label>
+                        </th>
+                    </tr>
+                    <tr scope="row">
+                        <th>144.255.72.20</th>
+                        <th>administrador</th>
+                        <th>56324</th>
+                        <th>5</th>
+                        <th>5</th>
+                        <th>2</th>
+                        <th><label class="switch">
+                                <input type="checkbox" name="action" id="toggle">
+                                <span class="slider"></span>
+                            </label></th>
+                    </tr>
+                    <tr scope="row">
+                        <th>224.123.43.12</th>
+                        <th>administrador</th>
+                        <th>12387</th>
+                        <th>2</th>
+                        <th>5</th>
+                        <th>1</th>
+                        <th><label class="switch">
+                                <input type="checkbox" name="action" id="toggle">
+                                <span class="slider"></span>
+                            </label></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {% bootstrap_javascript jquery='full' %}
 </body>
+
 </html>

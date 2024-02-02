@@ -57,7 +57,7 @@
 .form-singin a:hover{
     color: #fff;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -70,4 +70,5 @@
     width: 10vw;
     height: 50px;
     border: none;
+    margin-left: 6px;
 }
