@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django_plotly_dash.apps.DjangoPlotlyDashConfig",
     'security',
     'bootstrap4',
+    'django_bootstrap_icons'
 ]
 
 MIDDLEWARE = [

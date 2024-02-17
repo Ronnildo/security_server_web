@@ -9,18 +9,17 @@ body {
 
 .fundo {
     background-color: #13131B;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     color: #fff;
-    padding: 0;
-    margin: 0;
+    padding: 0 20px 0 20px;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    padding: 20px;
+    padding-top: 12px;
 }
 
 .title h2 {
@@ -60,7 +59,7 @@ body {
 .filter {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 20px 20px;
+    padding-bottom: 20px;
 }
 
 .filter .search {
@@ -109,7 +108,7 @@ body {
 
 .data-container {
     background-color: #1C1C26;
-    margin: 20px 20px 0 20px;
+    /* margin: 20px 20px 0 20px; */
     padding: 20px 20px 0 20px;
     height: 28rem;
     display: flex;
@@ -126,6 +125,7 @@ body {
 .data-container .switch {
     position: relative;
     display: inline-block;
+    cursor: pointer;
     width: 60px;
     height: 34px;
 }
@@ -149,7 +149,7 @@ body {
     transition: .4s;
 }
 
-.slider:before {
+.data-container .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -162,12 +162,12 @@ body {
     border-radius: 50%;
 }
 
-input:checked+.slider {
-    background-color: #2196F3;
+.data-container input:checked + .slider {
+    background-color: #EF9B9B;
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+.data-container input:focus + .slider {
+    box-shadow: 0 0 1px #EF9B9B;
 }
 
 input:checked+.slider:before {
@@ -179,4 +179,13 @@ input:checked+.slider:before {
 
 .slider .checked:before{
     background-color: #EF9B9B;
+}
+
+.details {
+    color: #FFFF;
+    padding-right: 10px;
+}
+
+.details:hover{
+    color: #9BBBFD;
 }
