@@ -63,17 +63,17 @@ body {
 }
 
 .filter .search {
-    font-size: 16px;
+    font-size: 14px;
     color: #FFF;
     border-radius: 20px;
-    height: 48px;
+    height: 2rem;
     width: 30vw;
     background-color: #1C1C26;
     padding-left: 10px;
 }
 
 .filter #date {
-    height: 48px;
+    height:2rem;
     width: 12vw;
     background-color: #1C1C26;
     margin-right: 20px;
@@ -81,6 +81,7 @@ body {
     border-radius: 20px;
     padding-left: 10px;
     font-weight: 600;
+    font-size: 12px;
 }
 
 .filter .search::-webkit-input-placeholder {
@@ -91,12 +92,12 @@ body {
 .filter input[type="date"]::-webkit-calendar-picker-indicator {
     color: #fff;
     filter: invert(1);
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 5px;
 }
 
 .filter button {
-    height: 48px;
+    height: 2rem;
     width: 12vw;
     background-color: #1C1C26;
     margin-right: 20px;
@@ -104,6 +105,7 @@ body {
     border-radius: 20px;
     padding-left: 10px;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .data-container {
@@ -115,6 +117,10 @@ body {
     align-self: center;
     justify-content: center;
     border-radius: 20px;
+}
+
+.data-container .table thead{
+    background-color: #172234;
 }
 
 .data-container .table th {
@@ -188,4 +194,26 @@ input:checked+.slider:before {
 
 .details:hover{
     color: #9BBBFD;
+}
+
+/* paginacao */
+
+.paginacao{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.paginacao .total-pages{
+    background-color: #172234;
+    width: 14rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.paginacao .pagination li {
+    background-color: #172234;
 }
