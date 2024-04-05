@@ -1,0 +1,110 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<div class="data-container">
+    <table class="table table-hover">
+        <thead>
+            <th scope="col">IP ADDRESS</th>
+            <th scope="col">USER</th>
+            <th scope="col">PORT</th>
+            <th scope="col">OCCURRENCES</th>
+            <th scope="col">SUCESS</th>
+            <th scope="col">FAILED</th>
+            <th scope="col">ACTIONS</th>
+        </thead>
+        <tbody>
+            <tr scope="row">
+                <th>144.244.23.49</th>
+                <th>administrador</th>
+                <th>40562</th>
+                <th>5</th>
+                <th>5</th>
+                <th>2</th>
+                <th>
+                    <a class="details" href="{% url 'details' %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </a>
+                    <label class="switch">
+                        <input type="checkbox" name="action" id="toggle">
+                        <span class="slider"></span>
+                    </label>
+                </th>
+            </tr>
+            <tr scope="row">
+                <th>144.255.72.20</th>
+                <th>administrador</th>
+                <th>56324</th>
+                <th>5</th>
+                <th>5</th>
+                <th>2</th>
+                <th>
+                    <a class="details" href="{% url 'details' %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </a>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </th>
+            </tr>
+            <tr scope="row">
+                <th>224.123.43.12</th>
+                <th>administrador</th>
+                <th>12387</th>
+                <th>2</th>
+                <th>5</th>
+                <th>1</th>
+                <th>
+                    <a class="details" href="{% url 'details' %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </a>
+                    <label class="switch">
+                        <input type="checkbox" name="action" id="toggle">
+                        <span class="slider"></span>
+                    </label>
+                </th>
+            </tr>
+            <tr scope="row">
+                <th>224.123.43.12</th>
+                <th>administrador</th>
+                <th>12387</th>
+                <th>2</th>
+                <th>5</th>
+                <th>1</th>
+                <th>
+                    <a class="details" href="{% url 'details' %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                            <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </a>
+                    <label class="switch">
+                        <input type="checkbox" name="action" id="toggle">
+                        <span class="slider"></span>
+                    </label>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>

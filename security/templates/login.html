@@ -1,0 +1,21 @@
+{% load static %}
+{% load bootstrap4 %}
+<div class="container-login">
+    <h1 class="title">Sing In</h1>
+    {% bootstrap_messages %}
+    <form action="{% url 'home' %}" method="post" class="form-singin" autocomplete="off">
+        {% csrf_token %}
+        <div>
+            <input type="email" class="form-control" placeholder="E-mail" required>
+        </div>
+        <div>
+            <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <div>
+            <a href="#" class="reset">Reset password?</a>
+        </div>
+        {% buttons %}
+            <button type="submit" class="singIn form-singin">Sing In</button>
+        {% endbuttons %}
+    </form>
+</div>
