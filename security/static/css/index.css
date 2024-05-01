@@ -1,25 +1,26 @@
-body{
+body {
     background-color: #13131B;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
+    width: max-content;
+    height: max-content;
 }
 
-.fundo{
+#fundo {
     background-color: #13131B;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    /* display: flex; */
+    /*display: flex; */
     color: #fff;
-    padding: 0 20px 0 20px;
+    padding: 0 40px 0 40px;
+    height: max-content;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    padding-top: 12px;
+    padding: 12px 0 10px 0;
 }
 
 .title h2 {
@@ -73,7 +74,7 @@ body{
 }
 
 .filter #date {
-    height:2rem;
+    height: 2rem;
     width: 12vw;
     background-color: #1C1C26;
     margin-right: 20px;
@@ -97,7 +98,7 @@ body{
 }
 
 .filter button {
-    height: 2rem;
+    height: 2.5rem;
     width: 12vw;
     background-color: #1C1C26;
     margin-right: 20px;
@@ -119,7 +120,7 @@ body{
     border-radius: 20px;
 }
 
-.data-container .table thead{
+.data-container .table thead {
     background-color: #172234;
 }
 
@@ -168,11 +169,11 @@ body{
     border-radius: 50%;
 }
 
-.data-container input:checked + .slider {
+.data-container input:checked+.slider {
     background-color: #EF9B9B;
 }
 
-.data-container input:focus + .slider {
+.data-container input:focus+.slider {
     box-shadow: 0 0 1px #EF9B9B;
 }
 
@@ -183,7 +184,7 @@ input:checked+.slider:before {
     background-color: #F10707;
 }
 
-.slider .checked:before{
+.slider .checked:before {
     background-color: #EF9B9B;
 }
 
@@ -192,6 +193,6 @@ input:checked+.slider:before {
     padding-right: 10px;
 }
 
-.details:hover{
+.details:hover {
     color: #9BBBFD;
 }

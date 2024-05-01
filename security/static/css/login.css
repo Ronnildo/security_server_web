@@ -14,8 +14,8 @@
 .container-login{
     background-color: #1C1C26;
     border-radius: 30px;
-    width: 40vw;
-    height: 60vh;
+    width: 36vw;
+    height: 66vh;
     box-shadow: 4px 4px 6px 2px rgba(184, 184, 184, 0.15);
     padding: 20px;
     align-items: center;
@@ -33,7 +33,7 @@
 
 .form-singin input{
     font-size: 16px;
-    color: #FFF;
+    color: #FFFFFF;
     border-radius: 30px;
     height: 48px;
     background-color: #172234;
@@ -58,6 +58,7 @@
     color: #fff;
     text-decoration: underline;
     font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -71,4 +72,5 @@
     height: 50px;
     border: none;
     margin-left: 6px;
+    margin-top: 10vh;
 }

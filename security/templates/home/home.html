@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends '_layout/base.html' %}
 {% load static %}
 {% load bootstrap4 %}
 {% load bootstrap_icons %}
@@ -6,11 +6,11 @@
 {% block content %}
 
 <!-- Filters -->
-{% include 'filters.html' %}
+{% include 'home/filters.html' %}
 <!-- End Filters -->
 
 <!-- Table -->
-{% include 'infos.html' %}
+{% include 'home/infos.html' %}
 <!-- End Table -->
 {% endblock %}
 
