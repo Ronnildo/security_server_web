@@ -13,19 +13,17 @@
 </head>
 
 <body>
-    <div class="vh-100" id="fundo" style="background-color: #13131B; height: max-content;">
-        <div class="title">
+    <div class="sec-container d-block">
+        <div class="d-flex" id="title">
             <div>
                 <h2>Welcome to Dashboard</h2>
                 <p>Log visualization interface</p>
             </div>
-            <div class="user-info">
-                <h2>RS</h2>
+            <div class="d-flex">
+                <h3 id="sigla">RS</h3>
                 <h3>Ronnildo</h3>
             </div>
         </div>
-
-        
         {% block content%} {% endblock %}
     </div>
 

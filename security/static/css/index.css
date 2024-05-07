@@ -1,4 +1,4 @@
-body {
+html, body {
     background-color: #13131B;
     padding: 0;
     margin: 0;
@@ -6,39 +6,39 @@ body {
     height: max-content;
 }
 
-#fundo {
+body .sec-container {
     background-color: #13131B;
     height: 100%;
     width: 100vw;
-    /*display: flex; */
+    display: flex;
     color: #fff;
-    padding: 0 40px 0 40px;
+    padding: 0 20px 0 40px;
     height: max-content;
 }
 
-.title {
+#title {
     display: flex;
     justify-content: space-between;
     color: #fff;
     padding: 12px 0 10px 0;
 }
 
-.title h2 {
-    font-size: 36px;
+#title h2 {
+    font-size: 32px;
     font-weight: 600;
 }
 
-.title p {
+#title p {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-.title .user-info {
+#title h3 {
     display: flex;
     align-self: center;
 }
 
-.user-info h2 {
+#title #sigla {
     display: flex;
     background-color: #F7B608;
     border-radius: 20px;
@@ -50,7 +50,7 @@ body {
     justify-content: center;
 }
 
-.user-info h3 {
+#title h3 {
     align-self: center;
     font-weight: bold;
     font-size: 32px;
@@ -111,9 +111,7 @@ body {
 
 .data-container {
     background-color: #1C1C26;
-    /* margin: 20px 20px 0 20px; */
     padding: 20px 20px 0 20px;
-    height: 28rem;
     display: flex;
     align-self: center;
     justify-content: center;

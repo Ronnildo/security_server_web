@@ -45,6 +45,11 @@
     background-color: #172234;
     border-color: #FFF;
 }
+.form-singin input::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 600;
+}
+
 
 .form-singin a{
     color: #fff;
